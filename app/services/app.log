@@ -1,0 +1,68 @@
+2025-02-21 00:05:33,062 [DEBUG] 日志模块已初始化
+2025-02-21 00:05:33,062 [INFO] 查询防火墙规则: HRZ -> HRZ-MGT
+2025-02-21 00:05:33,062 [INFO] BEGIN (implicit)
+2025-02-21 00:05:33,064 [INFO] SELECT security_zones.id AS security_zones_id 
+FROM security_zones 
+WHERE security_zones.name = ?
+2025-02-21 00:05:33,064 [INFO] [generated in 0.00007s] ('HRZ',)
+2025-02-21 00:05:33,064 [INFO] SELECT security_zones.id AS security_zones_id 
+FROM security_zones 
+WHERE security_zones.name = ?
+2025-02-21 00:05:33,064 [INFO] [cached since 0.0003675s ago] ('HRZ-MGT',)
+2025-02-21 00:05:33,064 [INFO] SELECT rule_sets.action AS rule_sets_action 
+FROM rule_sets 
+WHERE rule_sets.src_zone_id = ? AND rule_sets.dst_zone_id = ?
+2025-02-21 00:05:33,064 [INFO] [generated in 0.00005s] (1, 3)
+2025-02-21 00:05:33,064 [INFO] 查询结果: HRZ -> HRZ-MGT 策略: allow
+2025-02-21 00:05:33,065 [INFO] ROLLBACK
+2025-02-21 00:05:33,065 [INFO] 数据库连接已关闭
+2025-02-21 00:07:17,496 [DEBUG] 日志模块已初始化
+2025-02-21 00:07:17,496 [INFO] 查询防火墙规则: ENT-DMZ -> HRZ-MGT
+2025-02-21 00:07:17,496 [INFO] BEGIN (implicit)
+2025-02-21 00:07:17,498 [INFO] SELECT security_zones.id AS security_zones_id 
+FROM security_zones 
+WHERE security_zones.name = ?
+2025-02-21 00:07:17,498 [INFO] [generated in 0.00006s] ('ENT-DMZ',)
+2025-02-21 00:07:17,498 [INFO] SELECT security_zones.id AS security_zones_id 
+FROM security_zones 
+WHERE security_zones.name = ?
+2025-02-21 00:07:17,498 [INFO] [cached since 0.0003521s ago] ('HRZ-MGT',)
+2025-02-21 00:07:17,499 [INFO] SELECT rule_sets.action AS rule_sets_action 
+FROM rule_sets 
+WHERE rule_sets.src_zone_id = ? AND rule_sets.dst_zone_id = ?
+2025-02-21 00:07:17,499 [INFO] [generated in 0.00005s] (7, 3)
+2025-02-21 00:07:17,499 [INFO] 查询结果: ENT-DMZ -> HRZ-MGT 策略: restrict
+2025-02-21 00:07:17,499 [INFO] ROLLBACK
+2025-02-21 00:07:17,499 [INFO] 数据库连接已关闭
+2025-02-21 00:10:33,346 [INFO] BEGIN (implicit)
+2025-02-21 00:10:33,348 [INFO] SELECT security_zones.id AS security_zones_id 
+FROM security_zones 
+WHERE security_zones.name = ?
+2025-02-21 00:10:33,348 [INFO] [generated in 0.00009s] ('ENT-DMZ',)
+2025-02-21 00:10:33,348 [INFO] SELECT security_zones.id AS security_zones_id 
+FROM security_zones 
+WHERE security_zones.name = ?
+2025-02-21 00:10:33,348 [INFO] [cached since 0.0004358s ago] ('HRZ-MGT',)
+2025-02-21 00:10:33,348 [INFO] SELECT rule_sets.action AS rule_sets_action 
+FROM rule_sets 
+WHERE rule_sets.src_zone_id = ? AND rule_sets.dst_zone_id = ?
+2025-02-21 00:10:33,348 [INFO] [generated in 0.00005s] (7, 3)
+2025-02-21 00:10:33,349 [INFO] ROLLBACK
+2025-02-21 00:13:47,204 [DEBUG] 日志模块已初始化
+2025-02-21 00:13:47,204 [INFO] 查询防火墙规则: ENT-DMZ -> HRZ-MGT
+2025-02-21 00:13:47,205 [INFO] BEGIN (implicit)
+2025-02-21 00:13:47,206 [INFO] SELECT security_zones.id AS security_zones_id 
+FROM security_zones 
+WHERE security_zones.name = ?
+2025-02-21 00:13:47,206 [INFO] [generated in 0.00009s] ('ENT-DMZ',)
+2025-02-21 00:13:47,206 [INFO] SELECT security_zones.id AS security_zones_id 
+FROM security_zones 
+WHERE security_zones.name = ?
+2025-02-21 00:13:47,206 [INFO] [cached since 0.0003984s ago] ('HRZ-MGT',)
+2025-02-21 00:13:47,207 [INFO] SELECT rule_sets.action AS rule_sets_action 
+FROM rule_sets 
+WHERE rule_sets.src_zone_id = ? AND rule_sets.dst_zone_id = ?
+2025-02-21 00:13:47,207 [INFO] [generated in 0.00005s] (7, 3)
+2025-02-21 00:13:47,207 [INFO] 查询结果: ENT-DMZ -> HRZ-MGT 策略: restrict
+2025-02-21 00:13:47,207 [INFO] ROLLBACK
+2025-02-21 00:13:47,207 [INFO] 数据库连接已关闭
